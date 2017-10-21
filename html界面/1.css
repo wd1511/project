@@ -1,0 +1,119 @@
+#login
+{
+	width:283px;
+	height:267px;
+	border-left-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-width: 1px; 
+	position: absolute;
+	left:915px;
+	top:276px;
+	border-radius:5px;
+	border-color: #666666;
+}
+
+#login hr
+{
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	top:-23px;
+	color:#666666;
+}
+
+#login .title 
+{
+	display: inline-block;
+	width:39px;
+	text-align: center;
+	position: relative;
+	top:-23px;
+
+}
+
+#login input[type="text"]
+{
+	width:200px;
+	height: 24px;
+	border:1px solid;
+	border-color: #A1A1A1;
+	color:#A1A1A1; 
+	margin-left: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+#login input[type="password"]
+{
+	width:200px;
+	height: 24px;
+	border:1px solid;
+	border-color: #A1A1A1;
+	color:#A1A1A1; 
+	margin-left: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+#login select
+{
+	width:200px;
+	height: 24px;
+	border:1px solid;
+	border-color: #A1A1A1;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+#login input[type="submmit"]
+{
+	width:115px;
+	background-color: #C9C9C9;
+	color:#FFFFFF;
+	margin-top:10px;
+	margin-left: 84px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#frame 
+{
+	position: absolute;
+	left: 98px;
+	top:111px;
+	width:600px;
+	height: 550px;
+	overflow: hidden;
+}
+
+#imgshow 
+{
+	width: 1850px;
+	height:550px;
+}
+#imgshow img
+{
+	width:600px;
+	height:550px;
+}
+.play
+{
+	animation: carousel 9s;
+	animation-iteration-count: infinite;
+
+	-webkit-animation:carousel 9s;
+	-webkit-animation-iteration-count:infinite;
+}
+@keyframes carousel
+{
+	0%,30%  {margin-left: 0px;}
+	33%,63% {margin-left: -600px;}
+	66%,100% {margin-left: -1200px;}
+}
+
+@-webkit-keyframes carousel
+{
+	0%,30%  {margin-left: 0px;}
+	33%,63% {margin-left: -600px;}
+	66%,99% {margin-left: -1200px;}
+}
