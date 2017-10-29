@@ -86,20 +86,35 @@ body
 	position: absolute;
 	left: 98px;
 	top:111px;
-	width:600px;
-	height: 550px;
+	width:500px;
+	height: 600px;
 	overflow: hidden;
 }
 
 #imgshow 
 {
-	width: 1850px;
-	height:550px;
+	width: 1520px;
+	height:600px;
 }
-#imgshow img
+
+.imgtxt
 {
-	width:600px;
-	height:550px;
+	width: 500px;
+	height: 600px;
+	display: inline-block;
+}
+
+.imgtxt img
+{
+	width:500px;
+	height:500px;
+}
+.imgtxt .txt
+{
+	width: 500px;
+	text-align: center;
+	position: relative;
+	top:-50px;
 }
 .play
 {
@@ -112,24 +127,25 @@ body
 @keyframes carousel
 {
 	0%,30%  {margin-left: 0px;}
-	33%,63% {margin-left: -600px;}
-	66%,100% {margin-left: -1200px;}
+	33%,63% {margin-left: -500px;}
+	66%,100% {margin-left: -1000px;}
 }
 
 @-webkit-keyframes carousel
 {
 	0%,30%  {margin-left: 0px;}
-	33%,63% {margin-left: -600px;}
-	66%,99% {margin-left: -1200px;}
+	33%,63% {margin-left: -500px;}
+	66%,99% {margin-left: -1000px;}
 }
 
 #user_interface
 {
 	position: absolute; 
-	left: 154px; 
+	left: 224px; 
 	top:272px; 
 	width: 800px;
 	height: 230px; 
+
 	
 }
 .icon_navigation
