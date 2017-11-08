@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="1.css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="jquery.js"></script>
+	<script src="1.js"></script>
+	<link rel="stylesheet" href="login.css"/>
+	<link rel="stylesheet" href="menu.css"/>
+</head>
+<body>
+
+	<img src="jpg/主页.jpg" style="height: 100%;width: 100%; z-index: -1; display: inline-block;"/>
+	
+	<div id="homepage_search">
+
+		<div id="option">
+		<div id="reference_option">参考文献</div>
+		<div id="publish_option">发表论文</div>
+		</div>
+
+		<input type="text"/> 
+		<div class="img_area"><img src="jpg/搜索.png" /></div>
+
+	</div>
+
+	<div id="login_option">
+		<span class="txt" onclick="openLoginModal()">登录</span>
+		<img src="jpg/登录.png" onclick="openLoginModal()"/>
+		<img src="jpg/菜单.png" onclick="toggleMenu()"/>
+	</div>
+
+	<div class="slidebar" id="menu" >
+
+		<div>
+		<h3>Menu</h3>
+		<img class="close" src="jpg/关闭.png" onclick="toggleMenu()"/>
+		</div>
+
+		<div class="menu_option">
+			<img src="jpg/分类.png" />
+			<p class="txt">参考文献分类</p>
+		</div>
+
+		<div class="menu_option">
+			<img src="jpg/分类.png" />
+			<p class="txt">发表论文分类</p>
+		</div>
+
+		<div class="menu_option">
+			<img src="jpg/关系网络.png" />
+			<p class="txt">论文关系网络</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="login.html"></script>
+	
+
+</div>
+
+</body>
+</html>
