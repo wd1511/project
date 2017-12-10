@@ -1,31 +1,21 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="1.css"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="1.js"></script>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<script src="jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
 </head>
 <body>
-	<div id="user_interface">
-	<div class="icon_navigation">
-		<img src="jpg/论文信息.png"/>
-		<p>论文信息</p>
-	</div>
-	<div class="icon_navigation">
-		<img src="jpg/关系网络.png"/>
-		<p>论文关系网络</p>
-	</div>
-	</div>
-
-	<div class="slidebar" id="menu" >
-		<div class="option">
-			<p class="txt">登出</p>
-			<img src="jpg/登出.png"/>
-		</div>
-
-	</div>
-
-	<input  type="image" src="jpg/菜单.png"
-	 class="icon_menu" onclick="menuManage()" />
+<p>如果你点我，我就会消失。</p>
+<p>继续点我!</p>
+<p>接着点我!</p>
 </body>
 </html>

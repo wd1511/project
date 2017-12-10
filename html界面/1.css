@@ -1,207 +1,239 @@
 body
 {
-	margin: 0px;
-
+	margin:0px;
+	min-height: 800px;
+	min-width: 1350px;
 }
-#login
+
+#homepage_search 
 {
-	width:283px;
-	height:267px;
-	border-left-style:solid;
-	border-right-style:solid;
-	border-bottom-style:solid;
-	border-width: 1px; 
+	width:400px;
+	height:80px;
 	position: absolute;
-	left:915px;
-	top:276px;
-	border-radius:5px;
-	border-color: #666666;
+	left:70px;
+	top:100px;
+	z-index: 1;
 }
 
-#login hr
-{
-	display: inline-block;
-	position: relative;
-	width: 120px;
-	top:-23px;
-	color:#666666;
-}
-
-#login .title 
-{
-	display: inline-block;
-	width:39px;
-	text-align: center;
-	position: relative;
-	top:-23px;
-
-}
-
-#login input[type="text"]
-{
-	width:200px;
-	height: 24px;
-	border:1px solid;
-	border-color: #A1A1A1;
-	color:#A1A1A1; 
-	margin-left: 50px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-
-#login input[type="password"]
-{
-	width:200px;
-	height: 24px;
-	border:1px solid;
-	border-color: #A1A1A1;
-	color:#A1A1A1; 
-	margin-left: 50px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-#login select
-{
-	width:200px;
-	height: 24px;
-	border:1px solid;
-	border-color: #A1A1A1;
-	margin-left: 50px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-#login input[type="submmit"]
-{
-	width:115px;
-	background-color: #C9C9C9;
-	color:#FFFFFF;
-	margin-top:10px;
-	margin-left: 84px;
-	text-align: center;
-	border-radius: 5px;
-}
-
-#frame 
-{
-	position: absolute;
-	left: 98px;
-	top:111px;
-	width:500px;
-	height: 600px;
-	overflow: hidden;
-}
-
-#imgshow 
-{
-	width: 1520px;
-	height:600px;
-}
-
-.imgtxt
-{
-	width: 500px;
-	height: 600px;
-	display: inline-block;
-}
-
-.imgtxt img
-{
-	width:500px;
-	height:500px;
-}
-.imgtxt .txt
-{
-	width: 500px;
-	text-align: center;
-	position: relative;
-	top:-50px;
-}
-.play
-{
-	animation: carousel 9s;
-	animation-iteration-count: infinite;
-
-	-webkit-animation:carousel 9s;
-	-webkit-animation-iteration-count:infinite;
-}
-@keyframes carousel
-{
-	0%,30%  {margin-left: 0px;}
-	33%,63% {margin-left: -500px;}
-	66%,100% {margin-left: -1000px;}
-}
-
-@-webkit-keyframes carousel
-{
-	0%,30%  {margin-left: 0px;}
-	33%,63% {margin-left: -500px;}
-	66%,99% {margin-left: -1000px;}
-}
-
-#user_interface
-{
-	position: absolute; 
-	left: 224px; 
-	top:272px; 
-	width: 800px;
-	height: 230px; 
-
-	
-}
-.icon_navigation
-{
-
-	display: inline-block;
-	width: 189px;
-	height: 220px;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-.icon_navigation img
-{
-	width:189px;
-	height: 189px;
-}
-
-.icon_navigation p
-{
-	text-align: center;
-	margin: 5px;
-}
-
-.slidebar
-{
-	display: none;
-	position: absolute;
-	right: 0px;
-	width: 230px;
-	height: 100%;
-	background-color: #BCBCBC;
-}
-
-.slidebar .option
+#homepage_search input[type="text"]
 {
 	height:30px;
-	padding-left: 40px;
-	margin-top:40px;
+	width:300px;
 }
 
-.option img
+#homepage_search img
 {
-	width: 24px;
-	height: 24px;
+	height:30px;
+	width:30px;
 }
 
-.option .txt
+#homepage_search .img_area
 {
-	margin-top:0px;
-	margin-bottom: 0px;
 	display: inline-block;
+	height:30px;
+	background-color: #ffffff;
+	width:30px;
 	position: relative;
-	top:-4px;
-	margin-right:20px;
+	bottom:-11px;
+	right:5px;
+
 }
+
+.option
+{
+	width: 192px;
+	position: relative;
+	bottom:-11px;
+}
+.option ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #999;
+}
+
+.option li {
+
+    float: left;
+
+}
+
+.option li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.option li a:hover{
+    background-color: #111;
+}
+
+.chosen
+{
+	background-color: #111;
+}
+
+#login_option 
+{
+	width:150px;
+	height: 30px;
+	position: absolute;
+	right:0px;
+	top:10px;
+	z-index: 1;
+}
+#loginModal
+{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 800;
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+
+.login .modal-dialog{
+    width: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    left:500px;
+    top:100px;
+    border-radius: 5px;
+}
+.login .modal-footer{
+    border-top: 0;
+    margin-top: 0px;
+    padding: 10px 20px 20px;
+}
+.login .modal-header {
+    border: 0 none;
+    padding: 15px 15px 15px;
+    padding-left: 250px;
+/*     padding: 11px 15px; */
+}
+.login .modal-body{
+/*     background-color: #eeeeee; */
+}
+.login .modal-title{
+	width: 100px;
+	display: inline-block;
+	margin-right: 170px;
+}
+
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.login .division .line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+}
+.login .division .line.l {
+    left: 0;
+}
+.login .division .line.r {
+    right: 0;
+}
+.login .division span {
+    color: #424242;
+    font-size: 17px;
+}
+
+.login .forgot {
+    color: #797979;
+    margin-left: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.login .btn-login{
+    background-color: #00BBFF;
+    border-color: #00BBFF;
+    border-width: 0;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 5px;
+}
+.login .btn-login:hover{
+    background-color: #00A4E4;
+    color: #FFFFFF;
+}
+
+.login .loginBox
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.login .form-control{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+
+}
+.login .form-control:hover{
+    background-color: rgba(0,0,0,.16);
+}
+.login .form-control:focus{
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+    background-color: rgba(0,0,0,0.23);
+    color: #FFFFFF;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px;
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    height: 46px;
+    margin-bottom: 5px;
+    padding: 13px 12px;
+    width: 100%;
+}
+
+
+@media (max-width:400px){
+    .login .modal-dialog{
+        width: 100%;
+    }
+}
+
+
+#login_option .txt
+{
+	display: inline-block;
+	color:#ffffff;
+	position:relative;
+	top:-5px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+#login_option img
+{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
 
 .icon_menu 
 {
@@ -211,5 +243,101 @@ body
 	top:20px;
 	right:30px;
 }
+
+.slidebar
+{
+    z-index:3;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width: 200px;
+    height: 100%;
+    background: #111111;
+    display: none;
+}
+
+.slidebar .menu_option
+{
+    height:30px;
+    padding-left: 20px;
+    margin-top:40px;
+}
+
+.menu_option img
+{
+    width: 24px;
+    height: 24px;
+}
+
+.menu_option .txt
+{
+    margin-top:0px;
+    margin-bottom: 0px;
+    display: inline-block;
+    position: relative;
+    top:-4px;
+    margin-left:20px;
+    color: #ffffff;
+}
+.slidebar h3 {
+    color: white;
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left:20px;
+    top:-5px;
+    display: inline-block;
+}
+.slidebar .close
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:38px;
+    right: 10px;
+    cursor: pointer;
+}
+.close-button {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+.close-button span::before,
+.close-button span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top: -1px;
+}
+
+.close-button span::before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.close-button span::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 

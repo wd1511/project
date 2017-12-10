@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../1.css"/>
+    <script src="../../jquery.js"></script>
+    <script type="text/javascript" src="../../1.js"></script>
+	<link rel="stylesheet" href="3.css"/>
+</head>
+<body>
+	<div class="area">
+		<div id="title">
+			聚类分析
+		</div>
+
+		<div id="content">
+			<h2>作者</h2>
+			<p>方开泰</p>
+
+			<h2>摘要</h2>
+			<p>正 系统聚类法一次形成类以后就不变了,这要求一次分类分得比较准确,对分类的方法就提出较高的要求,相应的计算量自然比较大.改进这个缺点的一个自然想法 是,先粗略的聚...</p>
+
+			<h2>出版源</h2>
+			<p>《数学的实践与认识》 , 1982 (2) :55-63</p>
+
+			<h2>被引量</h2>
+			<p>572</p>
+
+			<h2>论文原文</h2>
+			<a href="#">www.whatever.com</a>
+		</div>
+	</div>
+
+	<div id="login_option">
+        <span class="txt" onclick="openLoginModal()">登录</span>
+        <img src="../../jpg/登录.png" onclick="openLoginModal()"/>
+        <img src="../../jpg/菜单.png" onclick="toggleMenu()"/>
+    </div>
+
+    <div class="slidebar" id="menu" >
+        <div>
+        <h3>Menu</h3>
+        <img class="close" src="../../jpg/关闭.png" onclick="toggleMenu()"/>
+        </div>
+
+        <div class="menu_option">
+            <img src="../../jpg/分类.png" />
+            <p class="txt">参考文献分类</p>
+        </div>
+
+        <div class="menu_option">
+            <img src="../../jpg/分类.png" />
+            <p class="txt">发表论文分类</p>
+        </div>
+
+        <div class="menu_option">
+            <img src="../../jpg/关系网络.png" />
+            <p class="txt">论文关系网络</p>
+        </div>
+    </div>
+
+    <div class="login" id="loginModal" >
+              <div class="modal-dialog">
+                  <div class="modal-content">
+
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="openLoginModal()">&times;</button>
+                 </div>
+
+                    <div class="modal-body">  
+                        <div class="box">
+                             <div class="content">                             
+                                <div class="division">
+                                    <div class="line l"></div>
+                                      <span>登录</span>
+                                    <div class="line r"></div>
+                                </div>
+                                <div class="error"></div>
+                                <div class="form loginBox">
+                                    <form method="post" action="/login" accept-charset="UTF-8">
+                                    <input id="username" class="form-control" type="text" placeholder="用户名" name="username">
+                                    <input id="password" class="form-control" type="password" placeholder="密码" name="password">
+                                    <input class="btn btn-default btn-login" type="button" value="登录" onclick="loginAjax()">
+                                    </form>
+                                </div>
+                             </div>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                        <div class="forgot login-footer">
+                            <span>忘记密码?</span>
+                        </div>
+                    </div>        
+                  </div>
+        </div>
+    </div>
+
+</body>
+</html>
