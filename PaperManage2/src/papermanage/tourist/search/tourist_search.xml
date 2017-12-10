@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+   
+        
+<constant name="struts.devMode" value="true" />
+     <package name="tourist_search" namespace="/tourist/search" extends="struts-default">  
+        
+        <action name="Search" class="papermanage.tourist.search.Seek">
+            <result name="PaperSuccess">/tourist/search/PaperSearch.jsp</result>
+            <result name="ReferenceSuccess">/tourist/search/ReferenceSearch.jsp</result>
+        </action>
+        
+        <action name="PaperInfo" class="papermanage.tourist.search.PaperInfo">
+            <result name="success">/tourist/search/PaperInfo.jsp</result>
+        </action>
+        
+        <action name="ReferenceInfo" class="papermanage.tourist.search.ReferenceInfo">
+            <result name="success">/tourist/search/ReferenceInfo.jsp</result>
+        </action>
+        
+     </package>
+ 
+</struts>

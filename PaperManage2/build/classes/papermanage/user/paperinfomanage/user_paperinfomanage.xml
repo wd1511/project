@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+     <constant name="struts.devMode" value="true" />
+     <package name="user_paperinfomanage" namespace="/user/paperinfomanage" extends="struts-default">  
+            <action name="UploadPaperFile" class="papermanage.user.paperinfomanage.UploadPaperFile">
+                <result name="success">/user/paperinfomanage/AddPaper.jsp</result>
+            </action>
+            
+            <action name="UploadReferenceFile" class="papermanage.user.paperinfomanage.UploadReferenceFile">
+                <result name="success">/user/paperinfomanage/AddReference.jsp</result>
+            </action>
+            
+            <action name="AddPaper" class="papermanage.user.paperinfomanage.AddPaper">
+                <result name="success">/user/user.jsp</result>
+            </action>
+            
+            <action name="AddReference" class="papermanage.user.paperinfomanage.AddReference">
+                <result name="success">/user/paperinfomanage/AddReference.jsp</result>
+            </action>            
+            
+            <action name="ModifyPaper" class="papermanage.user.paperinfomanage.ModifyPaper">
+                <result name="success">/user/paperinfomanage/ModifyPaper.jsp</result>
+            </action>
+            
+             <action name="ModifyReference" class="papermanage.user.paperinfomanage.ModifyReference">
+                <result name="success">/user/paperinfomanage/ModifyReference.jsp</result>
+            </action>
+            
+            <action name="Test" class="papermanage.user.paperinfomanage.allSort">
+                <result name="success">/user/paperinfomanage/AddPaper.jsp</result>
+            </action>
+            
+     </package>
+    
+     
+</struts>

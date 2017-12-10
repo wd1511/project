@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+     <constant name="struts.devMode" value="true" />
+     <package name="manager_paperinfomanage" namespace="/manager/paperinfomanage" extends="struts-default">  
+            <action name="UploadPaperFile" class="papermanage.manager.paperinfomanage.UploadPaperFile">
+                <result name="success">/manager/paperinfomanage/AddPaper.jsp</result>
+            </action>
+            
+            <action name="UploadReferenceFile" class="papermanage.manager.paperinfomanage.UploadReferenceFile">
+                <result name="success">/manager/paperinfomanage/AddReference.jsp</result>
+            </action>
+            
+            <action name="AddPaper" class="papermanage.manager.paperinfomanage.AddPaper">
+                <result name="success">/manager/paperinfomanage/AddPaper.jsp</result>
+            </action>
+            
+            <action name="AddReference" class="papermanage.manager.paperinfomanage.AddReference">
+                <result name="success">/manager/paperinfomanage/AddReference.jsp</result>
+            </action>
+            
+            <action name="DeletePaper" class="papermanage.manager.paperinfomanage.DeletePaper">
+                <result name="success">/manager.jsp</result>
+            </action>
+            
+            <action name="DeleteReference" class="papermanage.manager.paperinfomanage.DeleteReference">
+                <result name="success">/manager.jsp</result>
+            </action>
+            
+            <action name="ModifyPaper" class="papermanage.manager.paperinfomanage.ModifyPaper">
+                <result name="success">/manager/paperinfomanage/ModifyPaper.jsp</result>
+            </action>
+            
+             <action name="ModifyReference" class="papermanage.manager.paperinfomanage.ModifyReference">
+                <result name="success">/manager/paperinfomanage/ModifyReference.jsp</result>
+            </action>
+            
+     </package>
+    
+     
+</struts>

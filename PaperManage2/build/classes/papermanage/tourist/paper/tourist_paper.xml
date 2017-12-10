@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+     <constant name="struts.devMode" value="true" />
+     <package name="tourist_paper" namespace="/tourist/paper" extends="struts-default">  
+     
+          <action name="PaperSort1" class="papermanage.tourist.paper.PaperSort1">
+            <result name="success">/tourist/paper/PaperSort1.jsp</result>
+        </action>
+        
+        <action name="PaperSort2"  class="papermanage.tourist.paper.PaperSort2">
+            <result name="success">/tourist/paper/PaperSort2.jsp</result>
+        </action>
+    
+        <action name="PaperSort3" class="papermanage.tourist.paper.PaperSort3">
+            <result name="success">/tourist/paper/PaperSort3.jsp</result>
+        </action>
+        
+        <action name="PaperList" class="papermanage.tourist.paper.PaperList">
+            <result name="success">/tourist/paper/PaperList.jsp</result>
+        </action>
+        
+        <action name="PaperInfo" class="papermanage.tourist.paper.PaperInfo">
+            <result name="success">/tourist/paper/PaperInfo.jsp</result>
+        </action>
+     </package>
+    
+     
+</struts>

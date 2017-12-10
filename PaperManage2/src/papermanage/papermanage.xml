@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+     <constant name="struts.devMode" value="true" />
+     <package name="papermanage" namespace="/papermanage" extends="struts-default">  
+            
+            <action name="PaperFileDownload" class="papermanage.PaperFileDownload">
+                <result name="success" type="stream">
+                    <param name="contentDisposition">attachment;filename=paper</param>
+                    <param name="inputName">downloadFile</param>
+                </result>
+            </action>
+
+            <action name="ReferenceFileDownload" class="papermanage.ReferenceFileDownload">
+                <result name="success" type="stream">
+                    <param name="contentDisposition">attachment;filename=reference</param>
+                    <param name="inputName">downloadFile</param>
+                </result>
+            </action>
+            
+            <action name="Relationship" class="papermanage.GraphDownload">
+                <result name="success" type="stream">
+                    <param name="contentDisposition">attachment;filename=DotGraph</param>
+                    <param name="inputName">downloadFile</param>
+                </result>
+            </action>
+            
+            <action name="PaperExport" class="papermanage.PaperExport">
+            </action>
+            
+            <action name="ReferenceExport" class="papermanage.ReferenceExport">
+            </action>
+     </package>
+    
+     
+</struts>

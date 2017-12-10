@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+     <constant name="struts.devMode" value="true" />
+     <package name="manager_reference" namespace="/manager/reference" extends="struts-default">  
+     
+          <action name="ReferenceSort1" class="papermanage.manager.reference.ReferenceSort1">
+            <result name="success">/manager/reference/ReferenceSort1.jsp</result>
+        </action>
+        
+        <action name="ReferenceSort2"  class="papermanage.manager.reference.ReferenceSort2">
+            <result name="success">/manager/reference/ReferenceSort2.jsp</result>
+        </action>
+    
+        <action name="ReferenceSort3" class="papermanage.manager.reference.ReferenceSort3">
+            <result name="success">/manager/reference/ReferenceSort3.jsp</result>
+        </action>
+        
+        <action name="ReferenceList" class="papermanage.manager.reference.ReferenceList">
+            <result name="success">/manager/reference/ReferenceList.jsp</result>
+        </action>
+        
+        <action name="ReferenceInfo" class="papermanage.manager.reference.ReferenceInfo">
+            <result name="success">/manager/reference/ReferenceInfo.jsp</result>
+        </action>
+     </package>
+    
+     
+</struts>

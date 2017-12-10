@@ -1,0 +1,86 @@
+.search
+{
+
+}
+.option
+{
+    width: 365px;
+    position: absolute;
+    top:20px;
+    left:150px;
+}
+.option ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.option li {
+    float: left;
+}
+
+.option li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.option li a:hover{
+    background-color: #111;
+}
+
+.chosen
+{
+    background-color: #111;
+}
+
+.option input[type="text"]
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    display: inline-block;
+}
+.option select
+{
+    margin-left: 150px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.paper_area
+{
+    position: absolute;
+    top:150px;
+    left:20px;
+    width:50%;
+    height: 600px;
+}
+.paper
+{
+    height:20%;
+    width: 100%;
+    border:1px solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.vertical_line
+{
+    position: fixed;
+    top:5%;
+    left: 60%;
+    width: 0px;
+    height: 600px;
+    border:1px solid;
+}
+.recommend
+{
+    position: fixed;
+    left: 65%;
+    top:10%;
+}

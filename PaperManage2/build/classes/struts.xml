@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+<constant name="struts.devMode" value="true" />
+   
+        
+<constant name="struts.devMode" value="true" />
+     <package name="homepage" extends="struts-default">  
+        
+     
+        
+     </package>
+     
+     <include file="papermanage/papermanage.xml"></include>
+     
+    <include file="papermanage/tourist/paper/tourist_paper.xml"></include>
+    <include file="papermanage/tourist/reference/tourist_reference.xml"></include>
+    <include file="papermanage/tourist/tourist.xml"></include>
+    <include file="papermanage/tourist/search/tourist_search.xml"></include>
+    <include file="papermanage/tourist/relationship/tourist_relationship.xml"></include>
+        
+    <include file="papermanage/user/paper/user_paper.xml"></include>
+    <include file="papermanage/user/reference/user_reference.xml"></include>
+    <include file="papermanage/user/search/user_search.xml"></include>
+    <include file="papermanage/user/relationship/user_relationship.xml"></include>
+    <include file="papermanage/user/paperinfomanage/user_paperinfomanage.xml"></include>
+
+    
+    <include file="papermanage/manager/paperinfomanage/manager_paperinfomanage.xml"></include>
+    <include file="papermanage/manager/paper/manager_paper.xml"></include>
+    <include file="papermanage/manager/reference/manager_reference.xml"></include>
+    <include file="papermanage/manager/search/manager_search.xml"></include>
+    <include file="papermanage/manager/relationship/manager_relationship.xml"></include>
+
+</struts>
